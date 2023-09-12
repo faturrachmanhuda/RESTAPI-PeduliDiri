@@ -41,14 +41,14 @@ namespace RestfullAPI_PeduliDiri.Controllers
                 }
             } catch (Exception ex)
             {
-                ModelState.AddModelError("Data", ex.Message);
+                ModelState.AddModelError("Error", ex.Message);
                 return BadRequest(ModelState);
             }
             return Ok();
         }
 
         [HttpGet]
-        public IActionResult GetData()
+        public IActionResult GetData(int page = 1)
         {
             List<DataResponse> dataList = new List<DataResponse>();
 
@@ -58,7 +58,28 @@ namespace RestfullAPI_PeduliDiri.Controllers
                 {
                     conn.Open();
                     cmd = conn.CreateCommand();
-                    cmd.CommandText = "SELECT * FROM tb_data";
+
+                    cmd.CommandText = "SELECT COUNT (*) FROM tb_data";
+
+                    int totalResults = (int)cmd.ExecuteScalar();
+                    int pageSize = 10;
+                    int totalPages = (int)Math.Ceiling((double)totalResults / pageSize);
+
+                    if (page < 1)
+                    {
+                        page = 1;
+                    }
+                    else if (page > totalPages)
+                    {
+                        page = totalPages;
+                    }
+
+                    int offset = (page - 1) * pageSize;
+
+                    cmd.CommandText = "SELECT * FROM tb_data ORDER BY id OFFSET @offset ROWS FETCH NEXT @pageSize ROWS ONLY";
+                    cmd.Parameters.AddWithValue("@offset", offset);
+                    cmd.Parameters.AddWithValue("@pagesize", pageSize);
+
                     using(reader = cmd.ExecuteReader())
                     {
                         while (reader.Read())
@@ -74,14 +95,23 @@ namespace RestfullAPI_PeduliDiri.Controllers
                             dataList.Add(data);
                         }
                     }
+
+                    var responseData = new DataResponseWrapper()
+                    {
+                        results = dataList,
+                        page = page,
+                        total_pages = totalPages,
+                        total_results = totalResults,
+                    };
+
+                return Ok(responseData);
                 }
             } catch (Exception ex)
             {
-                ModelState.AddModelError("Data", ex.Message);
+                ModelState.AddModelError("Error", ex.Message);
                 return BadRequest(ModelState);
             }
 
-            return Ok(dataList);
         }
 
         [HttpPost("{id}")]
@@ -117,7 +147,7 @@ namespace RestfullAPI_PeduliDiri.Controllers
             }
             catch (Exception ex)
             {
-                ModelState.AddModelError("Data", ex.Message);
+                ModelState.AddModelError("Error", ex.Message);
                 return BadRequest(ModelState);
             }
 
@@ -143,11 +173,33 @@ namespace RestfullAPI_PeduliDiri.Controllers
                 }
             } catch (Exception ex)
             {
-                ModelState.AddModelError("Data", ex.Message);
+                ModelState.AddModelError("Error", ex.Message);
                 return BadRequest(ModelState);
             }
 
             return Ok();
-        } 
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult deleteDataByID(int id)
+        {
+            try
+            {
+                using(var conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+                    cmd = conn.CreateCommand();
+                    cmd.CommandText = "DELETE FROM tb_data WHERE id = @id";
+                    cmd.Parameters.AddWithValue("id", id);
+                    cmd.ExecuteNonQuery();
+                }
+            } catch (Exception ex)
+            {
+                ModelState.AddModelError("Error", ex.Message);
+                return BadRequest(ModelState);
+            }
+
+            return Ok();
+        }
     }
 }

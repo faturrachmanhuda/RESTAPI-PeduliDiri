@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RestfullAPI_PeduliDiri.Models;
 using System;
@@ -20,6 +21,7 @@ namespace RestfullAPI_PeduliDiri.Controllers
             connectionString = configuration["ConnectionStrings:SqlDatabase"];
         }
 
+        [Authorize]
         [HttpPost]
         public IActionResult createData(DataRequest dataRequest)
         {
@@ -45,10 +47,16 @@ namespace RestfullAPI_PeduliDiri.Controllers
             return Ok();
         }
 
+        [Authorize]
         [HttpGet]
         public IActionResult GetData(int page = 1)
         {
             List<DataResponse> dataList = new List<DataResponse>();
+
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Unauthorized(new { message = "Token has expired" });
+            }
 
             try
             {
@@ -112,6 +120,7 @@ namespace RestfullAPI_PeduliDiri.Controllers
 
         }
 
+        [Authorize]
         [HttpPost("{id}")]
         public IActionResult GetDataByIDUser(int id)
         {
@@ -152,6 +161,7 @@ namespace RestfullAPI_PeduliDiri.Controllers
             return Ok(response);
         }
 
+        [Authorize]
         [HttpPut("{id}")]
         public IActionResult updateDataByID(DataRequest dataRequest, int id)
         {
@@ -178,6 +188,7 @@ namespace RestfullAPI_PeduliDiri.Controllers
             return Ok();
         }
 
+        [Authorize]
         [HttpDelete("{id}")]
         public IActionResult deleteDataByID(int id)
         {

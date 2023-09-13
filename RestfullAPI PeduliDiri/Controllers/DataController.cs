@@ -28,16 +28,14 @@ namespace RestfullAPI_PeduliDiri.Controllers
                 using (var conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
-                    string query = "INSERT INTO tb_data (tanggal, jam, lokasi, suhu_tubuh, id_user) VALUES (@tanggal, @jam, @lokasi, @suhu_tubuh, @id_user)";
-                    using (var command = new SqlCommand(query, conn))
-                    {
-                        command.Parameters.AddWithValue("@tanggal", dataRequest.tanggal);
-                        command.Parameters.AddWithValue("@jam", dataRequest.jam);
-                        command.Parameters.AddWithValue("@lokasi", dataRequest.lokasi);
-                        command.Parameters.AddWithValue("@suhu_tubuh", dataRequest.suhu_tubuh);
-                        command.Parameters.AddWithValue("@id_user", dataRequest.id_user);
-                        command.ExecuteNonQuery();
-                    }
+                    cmd = conn.CreateCommand();
+                    cmd.CommandText = "INSERT INTO tb_data (tanggal, jam, lokasi, suhu_tubuh, id_user) VALUES (@tanggal, @jam, @lokasi, @suhu_tubuh, @id_user)";
+                    cmd.Parameters.AddWithValue("@tanggal", dataRequest.tanggal);
+                    cmd.Parameters.AddWithValue("@jam", dataRequest.jam);
+                    cmd.Parameters.AddWithValue("@lokasi", dataRequest.lokasi);
+                    cmd.Parameters.AddWithValue("@suhu_tubuh", dataRequest.suhu_tubuh);
+                    cmd.Parameters.AddWithValue("@id_user", dataRequest.id_user);
+                    cmd.ExecuteNonQuery();
                 }
             } catch (Exception ex)
             {
@@ -115,7 +113,7 @@ namespace RestfullAPI_PeduliDiri.Controllers
         }
 
         [HttpPost("{id}")]
-        public IActionResult GetDataByID(int id)
+        public IActionResult GetDataByIDUser(int id)
         {
             DataResponse response = new DataResponse();
 
@@ -125,7 +123,7 @@ namespace RestfullAPI_PeduliDiri.Controllers
                 {
                     conn.Open();
                     cmd = conn.CreateCommand();
-                    cmd.CommandText = "SELECT * FROM tb_data WHERE id = @id";
+                    cmd.CommandText = "SELECT * FROM tb_data WHERE id_user = @id";
                     cmd.Parameters.AddWithValue("@id", id);
                     using (reader = cmd.ExecuteReader())
                     {

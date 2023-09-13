@@ -1,0 +1,58 @@
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\appsettings.Development.json
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\appsettings.json
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\RestfullAPI PeduliDiri.exe
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\RestfullAPI PeduliDiri.deps.json
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\RestfullAPI PeduliDiri.runtimeconfig.json
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\RestfullAPI PeduliDiri.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\RestfullAPI PeduliDiri.pdb
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Humanizer.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.OpenApi.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Mono.TextTemplating.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\System.CodeDom.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\System.Data.SqlClient.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\System.Text.Encodings.Web.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\System.Text.Json.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\RestfullAPI PeduliDiri.csproj.AssemblyReference.cache
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\RestfullAPI PeduliDiri.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\RestfullAPI PeduliDiri.AssemblyInfoInputs.cache
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\RestfullAPI PeduliDiri.AssemblyInfo.cs
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\RestfullAPI PeduliDiri.csproj.CoreCompileInputs.cache
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\RestfullAPI PeduliDiri.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\RestfullAPI PeduliDiri.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\staticwebassets\msbuild.RestfullAPI PeduliDiri.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\staticwebassets\msbuild.build.RestfullAPI PeduliDiri.props
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\staticwebassets\msbuild.buildMultiTargeting.RestfullAPI PeduliDiri.props
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\staticwebassets\msbuild.buildTransitive.RestfullAPI PeduliDiri.props
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\staticwebassets.pack.json
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\staticwebassets.build.json
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\staticwebassets.development.json
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\scopedcss\bundle\RestfullAPI PeduliDiri.styles.css
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\RestfullAPI PeduliDiri.csproj.CopyComplete
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\RestfullAPI PeduliDiri.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\refint\RestfullAPI PeduliDiri.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\RestfullAPI PeduliDiri.pdb
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\RestfullAPI PeduliDiri.genruntimeconfig.cache
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\ref\RestfullAPI PeduliDiri.dll

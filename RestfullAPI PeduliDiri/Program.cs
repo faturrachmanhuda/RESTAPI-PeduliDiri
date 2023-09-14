@@ -16,10 +16,11 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateLifetime = true,
             ValidIssuer = builder.Configuration["Jwt:Issuer"],
             ValidAudience = builder.Configuration["Jwt:Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"])),
+            ClockSkew = TimeSpan.Zero
         };
-    }); 
-
+    });
+builder.Services.AddAuthorization();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -28,32 +29,15 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-app.Use(async (context, next) =>
-{
-    try
-    {
-        await next();
-    }
-    catch (SecurityTokenExpiredException)
-    {
-        context.Response.StatusCode = 401;
-        context.Response.ContentType = "application/json";
-        await context.Response.WriteAsync("{\"message\":\"Token has expired\"}");
-    }
-    catch (SecurityTokenValidationException)
-    {
-        context.Response.StatusCode = 401;
-        context.Response.ContentType = "application/json";
-        await context.Response.WriteAsync("{\"message\":\"Invalid token\"}");
-    }
-});
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseStatusCodePages(async context =>
 {

@@ -15,7 +15,6 @@ namespace RestfullAPI_PeduliDiri.Controllers
         private IConfiguration _configuration;
         public UserController(IConfiguration configuration)
         {
-
             _configuration = configuration;
         }
 
@@ -24,15 +23,14 @@ namespace RestfullAPI_PeduliDiri.Controllers
             UserRequest _request = null;
             if(request.Username == "Fatur" &&  request.Password == "123")
             {
-                _request = new UserRequest { Username = request.Username };
+                _request = new UserRequest { Nama = "Fatur" };
             }
             return _request;
         }
 
         private string GenerateToken(UserRequest request)
         {
-            TimeZoneInfo jakartaTimeZone = TimeZoneInfo.FindSystemTimeZoneById("SE Asia Standard Time");
-            DateTime expires = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, jakartaTimeZone).AddMinutes(1);
+            DateTime expires = DateTime.Now.AddMinutes(60);
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
             var token = new JwtSecurityToken(_configuration["Jwt:Issuer"], _configuration["Jwt:Audience"],null,
@@ -47,15 +45,14 @@ namespace RestfullAPI_PeduliDiri.Controllers
         public IActionResult Login(UserRequest request)
         {
             IActionResult response = Unauthorized();
-            TimeZoneInfo jakartaTimeZone = TimeZoneInfo.FindSystemTimeZoneById("SE Asia Standard Time");
-            DateTime expires = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, jakartaTimeZone).AddMinutes(1);
+            DateTime expires = DateTime.Now.AddMinutes(60);
             double expiresManip = (expires - DateTime.Now).TotalSeconds;
             string expiresInSeconds = expiresManip.ToString("0");
             var _request = AuthUser(request);
             if (_request != null)
             {
                 var token = GenerateToken(_request);
-                response = Ok(new { token = token, expires = expires });
+                response = Ok(new { namaUser = _request.Nama, token = token, expires = expires }) ;
             }
             return response;
         }

@@ -121,3 +121,10 @@ C:\Users\USER\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release
 C:\Users\USER\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\RestfullAPI PeduliDiri.pdb
 C:\Users\USER\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\RestfullAPI PeduliDiri.genruntimeconfig.cache
 C:\Users\USER\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\obj\Release\net6.0\ref\RestfullAPI PeduliDiri.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\MYPC PRO L7\source\repos\RESTAPI-PeduliDiri\RestfullAPI PeduliDiri\bin\Release\net6.0\System.IdentityModel.Tokens.Jwt.dll
